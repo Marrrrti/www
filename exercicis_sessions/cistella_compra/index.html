@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botiga en línia</title>
+</head>
+<body>
+
+    <h1>La meva botiga</h1>
+
+    <h2>Productes disponibles</h2>
+
+    <h3>Ordinador portàtil</h3>
+    <p>Preu: 800 €</p>
+
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="producte" value="portatil">
+
+        <label for="quantitat_portatil">Quantitat:</label>
+        <input
+            type="number"
+            id="quantitat_portatil"
+            name="quantitat"
+            min="1"
+            max="99"
+            value="1"
+            required
+        >
+
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+
+    <hr>
+
+    <h3>Ratolí</h3>
+    <p>Preu: 25 €</p>
+
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="producte" value="ratoli">
+
+        <label for="quantitat_ratoli">Quantitat:</label>
+        <input
+            type="number"
+            id="quantitat_ratoli"
+            name="quantitat"
+            min="1"
+            max="99"
+            value="1"
+            required
+        >
+
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+
+    <hr>
+
+    <p>
+        <a href="cistella_compra.php">Veure la cistella</a>
+        |
+        <a href="finalitzar_compra.php">Finalitzar compra</a>
+    </p>
+
+</body>
+</html>
